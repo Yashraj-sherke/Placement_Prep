@@ -6,4 +6,5 @@ This is repo for the preparation of all the stuff related to placement from DSA 
 - Prep Insta [https://prepinsta.com/]
 
 # CS core Subject:
--OS(operating System)[https://www.geeksforgeeks.org/operating-systems/last-minute-notes-operating-systems/]
+- OS(operating System)[https://www.geeksforgeeks.org/operating-systems/last-minute-notes-operating-systems/]
+- OS (Interview Question)[https://www.geeksforgeeks.org/operating-systems/operating-systems-interview-questions/]
