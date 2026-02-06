@@ -12,4 +12,7 @@ This is repo for the preparation of all the stuff related to placement from DSA 
 
 # Repository to Tetorials
 -codebase to tutorials[https://code2tutorial.com/]
+
+# Interview Prep Websites
+- Website1[https://www.greatfrontend.com/blog/100-react-interview-questions-straight-from-ex-interviewers]
   
