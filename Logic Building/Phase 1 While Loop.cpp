@@ -490,3 +490,179 @@ cout<< i << " ";
 
 }
 i++;
+
+
+	Print all factors of the given number.
+
+
+ int n;
+cin>>n;
+
+int i=1;
+while(i<=n)
+{
+if(n%i==0)
+{
+cout<<i<<" ";
+}
+i++;
+}
+
+
+
+Find and print the sum of all factors of the given number.
+
+ int n;
+cin>>n;
+
+int sum=0;
+
+int i=1;
+while(i<=n)
+{
+if(n%i==0)
+{
+sum=sum+i;
+}
+i++;
+}
+cout<<sum;
+
+better approach: 
+ int n;
+cin>>n;
+
+int sum=0;
+
+int i=1;
+while(i*i<=n)
+{
+if(n%i==0)
+{
+sum=sum+i;
+}
+i++;
+}
+cout<<sum;
+
+
+
+
+
+Find the HCF (Highest Common Factor) of two given numbers.
+
+
+int a,b;
+cin>>a>>b;
+int rem=1;
+
+while(rem!=0)
+{
+
+rem=a%b;
+a =b;
+b=rem;
+}
+cout<<a;
+
+Find the LCM (Least Common Multiple) of two given numbers.
+
+int a,b;
+cin>>a>>b;
+int ori a=a;
+int ori b=b;
+int rem=1;
+
+while(rem!=0)
+{
+
+rem=a%b;
+a =b;
+b=rem;
+}
+cout<<a;
+
+cout<<(ori a* ori b)/a ;
+
+
+
+Find the smallest digit in the given number.
+
+int smallest = INT_MAX;
+int n;
+cin>>n;
+
+while(n>=0)
+{
+int digit = n%10;
+
+if(digit<=smallest)
+{
+smallest = digit;
+}
+
+n=n/10;
+}
+cout<<smallest;
+
+
+Find the largest digit in the given number.
+
+int n;
+cin>>n;
+
+int largest=INT_MIN;
+
+while(n>0)
+{
+int digit=n%10;
+
+if(digit>largest)
+{
+largest= digit;
+}
+n=n/10;
+}
+cout<<largest;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
