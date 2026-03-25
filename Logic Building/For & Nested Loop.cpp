@@ -151,6 +151,180 @@ cout<<"Not Prime No";
 
 104	Phase 3 – For Loop	Print the Fibonacci series up to the required number of terms.
 
+ int n;
+    cin >> n;
+
+    int first = 0, sec = 1;
+
+    if(n >= 1) cout << first << " ";
+    if(n >= 2) cout << sec << " ";
+
+    for(int i = 0; i < n-2; i++) {
+        int fib = first + sec;
+        cout << fib << " ";
+        first = sec;
+        sec = fib;
+    }
+
+105	Phase 3 – For Loop	Find and print the sum of the Fibonacci series.
+
+   int n;
+    cin >> n;
+
+    int first = 0, sec = 1;
+    int sum = 0;
+
+    if(n >= 1) sum += first;
+    if(n >= 2) sum += sec;
+
+    for(int i = 0; i < n-2; i++) {
+        int fib = first + sec;
+        sum += fib;
+        first = sec;
+        sec = fib;
+
+
+106	Phase 3 – For Loop	Print all factors of the given number.
+
+int n;
+cin>>n;
+
+for(int i=1;i<=n;i++)
+{
+if(n%i==0)
+{
+cout<<i<<" ";
+}
+}
+
+107	Phase 3 – For Loop	Find and print the sum of all factors of the given number.
+
+
+
+int n;
+cin>>n;
+int sum=0;
+
+for(int i=1;i<=n;i++)
+{
+if(n%i==0)
+{
+sum=sum+i;
+}
+}
+cout<<sum;
+
+108	Phase 3 – For Loop	Find the HCF (Highest Common Factor) of the given numbers.
+ int a = 48, b = 18;
+
+    while(b != 0) {
+        int temp = b;
+        b = a % b;
+        a = temp;
+}
+
+109	Phase 3 – For Loop	Find the LCM (Least Common Multiple) of the given numbers.
+ int a = 48, b = 18;
+
+    while(b != 0) {
+        int temp = b;
+        b = a % b;
+        a = temp;
+}
+a=hcf;
+
+cout<<(a*b)/a;
+
+110	Phase 3 – For Loop	Print the square of each number from 1 to n.
+
+int n;
+cin>>n;
+
+for(int i=1;i<=n;i++)
+{
+cout<<i*i<<" "<<endl;
+}
+
+
+111	Phase 3 – For Loop	Print the cube of each number from 1 to n.
+
+int n;
+cin>>n;
+
+for(int i=1;i<=n;i++)
+{
+cout<<i*i*i<<" "<<endl;
+}
+
+112	Phase 3 – For Loop	Print all numbers between a and b that are divisible by 7.
+
+int a ,b;
+cin>>a>>b;
+
+for(int i=a;i<=b;i++)
+{
+if(i%7==0)
+{
+cout<<i<<endl;
+}
+}
+
+113	Phase 3 – For Loop	Find and print the sum of the first n natural numbers
+
+Method 1:
+int n;
+cin>>;
+
+int sum=n*(n+1)/2;
+
+cout<<sum;
+
+Method 2:
+
+int n;
+cin>>n;
+int sum=0;
+for(int i=0;i<=n;i++)
+{
+sum=sum+i;
+}
+cout<<sum;
+
+114	Phase 3 – For Loop	Find and print the sum of all even numbers from 1 up to n.
+
+
+int n;
+cin>>n;
+int sum=0;
+for(int i=0;i<=n;i++)
+{
+if(i%2==0)
+{
+sum=sum+i;
+}
+}
+cout<<sum;
+
+115	Phase 3 – For Loop	Find and print the sum of all odd numbers from 1 up to n.
+int n;
+cin>>n;
+int sum=0;
+for(int i=0;i<=n;i++)
+{
+if(i%2!=0)
+{
+sum=sum+i;
+}
+}
+cout<<sum;
+
+
+
+
+
+
+
+
 
 
 
