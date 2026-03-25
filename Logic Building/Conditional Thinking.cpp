@@ -523,6 +523,310 @@ cout << "Not Perfect Square";
 
 
 
+                         🔥 Level 4 – Logical Operators & Compound Statements 
+
+31	Level 4 – Logical Operators & Compound Statements	Take a character and check if it is a letter, a digit, or neither.
+
+char ch;
+cin>>ch;
+
+if((ch>='a' && ch<='z') || (ch>='A' && ch<='Z')
+{
+cout<<"Letter";
+}
+else if(ch>='0' &&  ch<='9')
+{
+cout<<"Digit";
+}
+else{
+cout<<"Neither";
+}
+
+
+32	Level 4 – Logical Operators & Compound Statements	Take a number and print 'Fizz' if divisible by 3, 'Buzz' if divisible by 5, and 'FizzBuzz' if divisible by both.
+
+
+int n;
+cin>>n;
+
+if(n%3==0)
+{
+cout<<"Fizz";
+}
+else if(n%5==0)
+{
+cout<<"Buzz";
+}
+else if(n%3==0 && n%5==0)
+{
+cout<<"Fizzbuz";
+}
+
+33	Level 4 – Logical Operators & Compound Statements	Take three numbers and print the median value (neither maximum nor minimum).
+
+int a,b,c;
+cin>>a>>b>>c;
+
+if(a>=b && a>=c)
+{
+if(b>=c)
+{
+cout<<a <<" "<< b<< " "<<c ;
+cout<<"Median="<<b;
+}
+else{
+cout<<a<<" "<<c<<" "<<b;
+cout<<"Median="<<c;
+}
+if(b>=a && b>=c)
+{
+if(a>=c)
+{
+cout<<b<<" " << a<< " "<<c;
+cout<<"Median="<<a;
+}
+else{
+cout<<b<<" "<<c<<" "<<a;
+cout<<"Median="<<c;
+}
+if(c>=b && c>=a)
+{
+if(a>=b)
+{
+cout<<c<<" "<<a<< " "<<b;
+cout<<"Median="<<a;
+}
+else{
+cout<<c<< " "<<b<<" "<<a;
+cout<<"Median="<<b;
+}
+
+
+
+34	Level 4 – Logical Operators & Compound Statements	Take 24-hour time (hours and minutes) and print whether it is AM or PM.
+
+35	Level 4 – Logical Operators & Compound Statements	Take income and age, and check if eligible for tax (age > 18 and income > 5 L).
+
+
+int income,age;
+cin>>income>>age;
+
+if(age>18 && income>5L)
+{
+cout<<"Eligible Tax";
+}
+else{
+cout<<"Not Eliginle"
+}
+
+36	Level 4 – Logical Operators & Compound Statements	Take two numbers and check if both are positive and their sum is less than 100.
+
+int a,b;
+cin>>a>>b;
+
+if(a>=0 && b>=0 && a+b<100)
+{
+cout<<"Yes";
+}
+else{
+cout<<"No"
+}
+
+Level 4 – Logical Operators & Compound Statements	Take a single digit (0–9) and print its word form ('Zero' to 'Nine').
+
+38	Level 4 – Logical Operators & Compound Statements	Take a weekday number (1–7) and determine if it is a weekday or weekend.
+cin >> day;
+
+    if(day >= 1 && day <= 5)
+    {
+        cout << "Weekday";
+    }
+    else if(day == 6 || day == 7)
+    {
+        cout << "Weekend";
+    }
+    else
+    {
+        cout << "Invalid input";
+    }
+
+Level 4 – Logical Operators & Compound Statements	Take electricity units consumed and calculate the bill as per slabs (using if-else).
+
+int unit;
+cin>>unit;
+
+40	Level 4 – Logical Operators & Compound Statements	Take a password string and check basic rules (length ≥ 8 and contains at least one digit).
+
+strin pass;
+cin>>pass;
+
+int n = pass.size();
+
+if(n>=8 && 
+
+
+                                     🔥 Level 5 – Creative / Tricky Logical Scenarios 
+
+41	Level 5 – Creative / Tricky Logical Scenarios	Take coordinates (x, y) and check if the point lies on the X-axis, Y-axis, or at the origin.
+
+
+int x,y;
+cin>>x>>y;
+
+if(x==0 && y==0)
+{
+cout<<"Origin";
+}
+else if(x!=0 && y==0)
+{
+cout<<"X-axis";
+}
+else if(y!=0 && x==0)
+{
+cout<<"Y-axis"
+}
+
+42	Level 5 – Creative / Tricky Logical Scenarios	Take three numbers and check if they can form a Pythagorean triplet.
+
+cin>>a>>b>>c;
+
+if((a*a+b*b)==c*c || (c*c+b*b)==b*b || (a*a+c*c)==b*b))
+{
+cout<<"Pythagoran Triplate";
+}
+else{
+cout<<"Not";
+}
+
+43	Level 5 – Creative / Tricky Logical Scenarios	Take day and month and check if it forms a valid calendar date (ignoring leap years).
+
+44	Level 5 – Creative / Tricky Logical Scenarios	Take time (hours and minutes) and print the smaller angle between the hour and minute hands.
+ int H, M;
+    cin >> H >> M;
+
+    double angle = abs(30*H - 5.5*M);
+
+    // Take smaller angle
+    if(angle > 180)
+        angle = 360 - angle;
+
+    cout << angle;
+
+
+45	Level 5 – Creative / Tricky Logical Scenarios	Take three numbers and check if they are in arithmetic progression.
+
+int a,b,c;
+cin>>a>>b>>c;
+
+int d;
+cin>>d;
+
+if(b-a==c-b)
+{
+cout<<"Yes";
+}
+else{
+cout<<"No";
+}
+
+46	Level 5 – Creative / Tricky Logical Scenarios	Take three numbers and check if they are in geometric progression.
+
+
+47	Level 5 – Creative / Tricky Logical Scenarios	Take a 3-digit number and check if the sum of the first and last digit equals the middle digit.
+
+int n;
+cin>>n;
+
+int last = n%10;
+n=n/10;
+
+int middle = n%10;
+n=n/10;
+
+int first = n%10;
+n=n/10;
+
+if(first+last == middle)
+{
+cout<<"Yes";
+}
+else{
+cout<<"NO";
+}
+
+
+48	Level 5 – Creative / Tricky Logical Scenarios	Take an integer (1–9999) and check if the sum of its digits is greater than the product of its digits.
+int n;
+cin>>n;
+
+int sum=0;
+int product =1;
+
+while(n>0)
+{
+int digit = n%10;
+
+sum = sum+digit;
+
+product = product*digit;
+
+n=n/10;
+
+}
+
+if(sum >=product)
+{
+cout<<"Yes";
+}
+else{
+cout<<"No";
+}
+
+49	Level 5 – Creative / Tricky Logical Scenarios	Take two dates (day and month) and determine which one comes first in the calendar.
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int day1, month1;
+    cin >> day1 >> month1;
+
+    int day2, month2;
+    cin >> day2 >> month2;
+
+    if(month1 < month2)
+    {
+        cout << "First date is earlier";
+    }
+    else if(month1 > month2)
+    {
+        cout << "Second date is earlier";
+    }
+    else
+    {
+        // Same month → compare days
+        if(day1 < day2)
+        {
+            cout << "First date is earlier";
+        }
+        else if(day1 > day2)
+        {
+            cout << "Second date is earlier";
+        }
+        else
+        {
+            cout << "Both dates are same";
+        }
+    }
+
+    return 0;
+}
+
+
+
+50	Level 5 – Creative / Tricky Logical Scenarios	Take a year and print the corresponding century (e.g., '19th century', '20th century').
+
+
 
 
 
